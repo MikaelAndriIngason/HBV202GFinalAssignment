@@ -17,7 +17,7 @@ public class Lending {
     // Getters and setters
 
     public LocalDate getDueDate() {
-        return this.dueDate;
+        return dueDate;
     }
 
     public void setDueDate(LocalDate dueDate) {
@@ -25,7 +25,7 @@ public class Lending {
     }
 
     public Book getBook() {
-        return this.book;
+        return book;
     }
 
     public void setBook(Book book) {
@@ -33,7 +33,7 @@ public class Lending {
     }
 
     public User getUser() {
-        return this.user;
+        return user;
     }
 
     public void setUser(User user) {

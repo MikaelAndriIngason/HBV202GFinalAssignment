@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
@@ -8,9 +9,9 @@ public class Book {
 
     // Constructor
     public Book(String title, List<Author> authors) throws EmptyAuthorListException {
-        if (authors.size() == 0)
-            throw new EmptyAuthorListException("Author list is empty");
-
+        //if (authors.size() == 0)
+        //    throw new EmptyAuthorListException("Author list is empty");
+        super();
         this.title = title;
         this.authors = authors;
     }
@@ -18,11 +19,11 @@ public class Book {
     // Getters and setters
 
     public void addAuthor(Author author) {
-        this.authors.add(author);
+        authors.add(author);
     }
 
     public List<Author> getAuthors() {
-        return this.authors;
+        return authors;
     }
 
     public void setAuthors(List<Author> authors) {
@@ -30,7 +31,7 @@ public class Book {
     }
 
     public String getTitle() {
-        return this.title;
+        return title;
     }
 
     public void setTitle(String title) {
