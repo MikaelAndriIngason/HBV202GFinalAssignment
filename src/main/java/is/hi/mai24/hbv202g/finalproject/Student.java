@@ -1,3 +1,5 @@
+package is.hi.mai24.hbv202g.finalproject;
+
 public class Student extends User {
     private boolean feePaid;
 

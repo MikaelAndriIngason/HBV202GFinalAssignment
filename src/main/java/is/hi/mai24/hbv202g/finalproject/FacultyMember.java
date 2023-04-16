@@ -1,3 +1,5 @@
+package is.hi.mai24.hbv202g.finalproject;
+
 public class FacultyMember extends User {
     private String department;
 

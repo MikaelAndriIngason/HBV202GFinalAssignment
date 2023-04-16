@@ -1,9 +1,10 @@
-public class Author {
+package is.hi.mai24.hbv202g.finalproject;
+
+public class User {
     private String name;
 
     // Constructor
-    public Author(String name) {
-        super();
+    public User(String name) {
         this.name = name;
     }
 
