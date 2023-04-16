@@ -4,8 +4,8 @@ public class FacultyMember extends User {
     private String department;
 
     // Constructor
-    public FacultyMember(String name, String department) {
-        super(name);
+    public FacultyMember(String name, String password, String department) {
+        super(name, password);
         this.department = department;
     }
 

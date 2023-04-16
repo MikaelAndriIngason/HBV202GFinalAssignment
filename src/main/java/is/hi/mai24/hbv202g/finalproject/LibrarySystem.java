@@ -25,14 +25,14 @@ public class LibrarySystem {
     }
 
     // Add a user to the library
-    public void addStudentUser(String name, boolean feePaid) {
-        User user = new Student(name, feePaid);
+    public void addStudentUser(String name, String password, boolean feePaid) {
+        User user = new Student(name, password, feePaid);
         users.add(user);
     }
 
     // Add a faculty member to the library
-    public void addFacultyMember(String name, String department) {
-        User user = new FacultyMember(name, department);
+    public void addFacultyMember(String name, String password, String department) {
+        User user = new FacultyMember(name, password, department);
         users.add(user);
     }
 
@@ -67,14 +67,14 @@ public class LibrarySystem {
     }
 
     // Extend the due date of a book
-    public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) throws UserOrBookDoesNotExistException {
-        if (!users.contains(facultyMember) || !books.contains(book)) {
-            throw new UserOrBookDoesNotExistException("Faculty member or book does not exist");
+    public void extendLending(Book book, LocalDate newDueDate) throws UserOrBookDoesNotExistException {
+        if (!books.contains(book)) {
+            throw new UserOrBookDoesNotExistException("Book does not exist");
         }
 
         boolean found = false;
         for (Lending lending : lendings) {
-            if (lending.getBook().equals(book) && lending.getUser().equals(facultyMember)) {
+            if (lending.getBook().equals(book)) {
                 lending.setDueDate(newDueDate);
                 found = true;
             }
@@ -96,6 +96,7 @@ public class LibrarySystem {
             if (lending.getBook().equals(book) && lending.getUser().equals(user)) {
                 lendings.remove(lending);
                 returned = true;
+                break;
             }
         }
 
