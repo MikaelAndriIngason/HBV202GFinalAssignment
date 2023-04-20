@@ -1,6 +1,5 @@
 package is.hi.mai24.hbv202g.finalproject;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
@@ -11,9 +10,8 @@ public class Book {
 
     // Constructor
     public Book(String title, List<Author> authors) throws EmptyAuthorListException {
-        //if (authors.size() == 0)
-        //    throw new EmptyAuthorListException("Author list is empty");
-        super();
+        if (authors.size() == 0)
+            throw new EmptyAuthorListException("Author list is empty");
         this.title = title;
         this.authors = authors;
     }

@@ -7,10 +7,17 @@
   <groupId>is.hi.mai24.hbv202g.finalproject</groupId>
   <artifactId>finalproject</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>finalproject</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>Final Assignment</name>
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>LICENSE</url>
+    </license>
+  </licenses>
+  <organization>
+    <name>University of Iceland</name>
+    <url>https://www.hi.is</url>
+  </organization>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

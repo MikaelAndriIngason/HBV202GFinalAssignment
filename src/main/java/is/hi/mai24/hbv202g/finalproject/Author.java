@@ -5,7 +5,6 @@ public class Author {
 
     // Constructor
     public Author(String name) {
-        super();
         this.name = name;
     }
 
