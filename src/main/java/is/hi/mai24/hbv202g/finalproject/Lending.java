@@ -4,13 +4,16 @@ package is.hi.mai24.hbv202g.finalproject;
 import java.time.LocalDate;
 
 public class Lending {
-
     // Variables
     private LocalDate dueDate;
     private Book book;
     private User user;
 
-    // Constructor
+    /**
+     * Lending constructor (creates a new lending).
+     * @param book book that is being lent
+     * @param user user that is lending the book
+     */
     public Lending(Book book, User user) {
         this.dueDate = LocalDate.now().plusDays(30);
         this.book = book;

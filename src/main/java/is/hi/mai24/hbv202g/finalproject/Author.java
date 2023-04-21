@@ -1,9 +1,13 @@
 package is.hi.mai24.hbv202g.finalproject;
 
 public class Author {
+    // Variables
     private String name;
 
-    // Constructor
+    /**
+     * Author constructor (creates a new author).
+     * @param name author's name
+     */
     public Author(String name) {
         this.name = name;
     }
